@@ -1,0 +1,8 @@
+spring:
+    data:
+        cassandra:
+            port: 9042
+            keyspace-name: queue
+            local-datacenter: datacenter1
+server:
+    port: 3006
