@@ -13,14 +13,23 @@ public class CassandraService {
     @Autowired
     QueueCassandraRepository queueCassandraRepository;
 
-    public Flux<SyncBoundedQueue> getSyncBoundedQueueById(Integer id) {
-        Flux<SyncBoundedQueue> syncBoundedQueue = queueCassandraRepository.findAllById(id);
-        return syncBoundedQueue;
+    public Mono<SyncBoundedQueue> getSyncBoundedQueueById(String id ) {
+        return queueCassandraRepository.findById(id);
     }
 
-    public Mono<SyncBoundedQueue> putSyncBoundedQueueByValue(String value) {
-        Mono<SyncBoundedQueue> syncBoundedQueue = queueCassandraRepository.insert(value);
-        return syncBoundedQueue;
+    public Mono<SyncBoundedQueue> putSyncBoundedQueueByValue( SyncBoundedQueue syncBoundedQueue ) {
+        return queueCassandraRepository.insert(syncBoundedQueue);
     }
 
+    public Mono<Void> deleteSyncBoundedQueueById( String id ) {
+        return queueCassandraRepository.deleteById(id);
+    }
+
+    public Mono<Void> deleteSyncBoundedQueueByValue( SyncBoundedQueue syncBoundedQueue ) {
+        return queueCassandraRepository.delete(syncBoundedQueue);
+    }
+
+    public Flux<SyncBoundedQueue> getSyncBoundedQueueAll() {
+        return queueCassandraRepository.findAll();
+    }
 }

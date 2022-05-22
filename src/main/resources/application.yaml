@@ -2,7 +2,8 @@ spring:
     data:
         cassandra:
             port: 9042
-            keyspace-name: queue
             local-datacenter: datacenter1
+            contact-points: localhost
+            keyspace-name: juicyfruit
 server:
     port: 3006

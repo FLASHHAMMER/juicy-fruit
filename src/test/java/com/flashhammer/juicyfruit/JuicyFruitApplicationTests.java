@@ -24,7 +24,7 @@ public class JuicyFruitApplicationTests {
 
     @Test
     void hello() {
-        assertThat(this.getTestHelloController().hello().size()).isEqualTo(1);
+        assertThat(this.getTestHelloController().hello().getResponse().size()).isEqualTo(1);
     }
 
 }

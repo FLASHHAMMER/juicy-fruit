@@ -8,11 +8,6 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Repository
-public interface QueueCassandraRepository extends ReactiveCassandraRepository<SyncBoundedQueue, Integer> {
-
-    @AllowFiltering
-    Flux<SyncBoundedQueue> findAllById(Integer id);
-
-    Mono<SyncBoundedQueue> insert(String value);
+public interface QueueCassandraRepository extends ReactiveCassandraRepository<SyncBoundedQueue, String> {
 
 }
