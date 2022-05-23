@@ -11,12 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("hello")
 public class TestHelloController {
 
-    @Autowired
-    HelloService helloService;
+    private HelloService getHelloService(){
+        return new HelloService();
+    }
 
     @GetMapping
     public HelloResponse hello(){
-        return helloService.hello();
+        return this.getHelloService().hello();
     }
 
 }
