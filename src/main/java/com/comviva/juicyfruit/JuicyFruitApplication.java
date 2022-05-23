@@ -1,4 +1,4 @@
-package com.flashhammer.juicyfruit;
+package com.comviva.juicyfruit;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

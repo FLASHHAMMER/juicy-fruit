@@ -1,4 +1,4 @@
-package com.flashhammer.juicyfruit.configuration;
+package com.comviva.juicyfruit.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

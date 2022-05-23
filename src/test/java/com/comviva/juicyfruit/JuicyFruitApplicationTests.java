@@ -1,7 +1,6 @@
-package com.flashhammer.juicyfruit;
+package com.comviva.juicyfruit;
 
-import com.flashhammer.juicyfruit.controller.CassandraController;
-import com.flashhammer.juicyfruit.controller.TestHelloController;
+import com.comviva.juicyfruit.controller.TestHelloController;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -10,13 +9,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest
 public class JuicyFruitApplicationTests {
 
+    // TODO
 //    public CassandraController getCassandraController(){
 //        return new CassandraController();
 //    }
+
     public TestHelloController getTestHelloController(){
         return new TestHelloController();
     }
 
+    // TODO
 //    @Test
 //    void contextLoads() {
 //        assertThat(this.getCassandraController()).isNotNull();

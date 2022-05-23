@@ -1,4 +1,4 @@
-package com.flashhammer.juicyfruit.model;
+package com.comviva.juicyfruit.model;
 
 import com.datastax.oss.driver.api.core.uuid.Uuids;
 import org.springframework.data.annotation.Id;
