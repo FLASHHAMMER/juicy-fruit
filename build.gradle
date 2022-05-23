@@ -4,7 +4,7 @@ plugins {
     id 'java'
 }
 
-group = 'com.comviva'
+group = 'com.flashhammer'
 version = '0.0.1'
 description = 'juicy-fruit'
 sourceCompatibility = 17

@@ -1,7 +1,7 @@
-package com.comviva.juicyfruit.controller;
+package com.flashhammer.juicyfruit.controller;
 
-import com.comviva.juicyfruit.model.SyncBoundedQueue;
-import com.comviva.juicyfruit.service.CassandraService;
+import com.flashhammer.juicyfruit.model.SyncBoundedQueue;
+import com.flashhammer.juicyfruit.service.CassandraService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;

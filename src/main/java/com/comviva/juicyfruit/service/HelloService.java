@@ -1,6 +1,6 @@
-package com.comviva.juicyfruit.service;
+package com.flashhammer.juicyfruit.service;
 
-import com.comviva.juicyfruit.model.HelloResponse;
+import com.flashhammer.juicyfruit.model.HelloResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

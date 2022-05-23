@@ -1,4 +1,4 @@
-package com.comviva.juicyfruit.model;
+package com.flashhammer.juicyfruit.model;
 
 import java.util.Map;
 
