@@ -10,7 +10,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest
 public class JuicyFruitApplicationTests {
 
-    // TODO
     public CassandraController getCassandraController(){
         return new CassandraController();
     }
@@ -19,7 +18,6 @@ public class JuicyFruitApplicationTests {
         return new TestHelloController();
     }
 
-    // TODO
     @Test
     void contextLoads() {
         assertThat(this.getCassandraController()).isNotNull();
